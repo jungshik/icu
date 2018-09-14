@@ -1481,7 +1481,6 @@ _appendLDMLExtensionAsKeywords(const char* ldmlext, ExtensionListEntry** appendT
         if (!_addExtensionToList(&kwdFirst, kwd, FALSE)) {
             *status = U_ILLEGAL_ARGUMENT_ERROR;
             uprv_free(kwd);
-            goto cleanup;
         }
 
         /* once keyword entry is created, delete the attribute list */
@@ -1641,9 +1640,10 @@ _appendLDMLExtensionAsKeywords(const char* ldmlext, ExtensionListEntry** appendT
                     kwd->value = pType;
 
                     if (!_addExtensionToList(&kwdFirst, kwd, FALSE)) {
-                        *status = U_ILLEGAL_ARGUMENT_ERROR;
+                        // TODO: figure this out
+                        //*status = U_ILLEGAL_ARGUMENT_ERROR;
                         uprv_free(kwd);
-                        goto cleanup;
+                        //goto cleanup;
                     }
                 }
 
