@@ -5999,6 +5999,7 @@ static const struct {
     {"art-lojban",          "jbo",                  FULL_LENGTH},
     {"zh-hakka",            "hak",                  FULL_LENGTH},
     {"zh-cmn-CH",           "cmn_CH",               FULL_LENGTH},
+    {"zh-cmn-CH-u-co-pinyin", "cmn_CH@collation=pinyin",               FULL_LENGTH},
     {"xxx-yy",              "xxx_YY",               FULL_LENGTH},
     {"fr-234",              "fr_234",               FULL_LENGTH},
     {"i-default",           "en@x=i-default",       FULL_LENGTH},
